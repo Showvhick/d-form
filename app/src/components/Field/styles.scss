@@ -1,0 +1,13 @@
+.field-container {
+    float:left;
+    margin:5px 0px;
+    width:100%;
+    
+    .MuiFormControl-root {
+        width:100%;
+        margin: 0;
+        label,legend {
+            text-align: left;
+        }
+    }
+}

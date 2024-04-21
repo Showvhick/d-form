@@ -1,0 +1,26 @@
+{
+  "name": "d-form",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Showvhick/d-form.git",
+  "author": "Showvhick Nath",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "app",
+    "apis",
+    "static"
+  ],
+  "scripts": {
+    "dev-api": "yarn workspace apis dev",
+    "build:static": "yarn workspace @proj/static build",
+    "dev:api": "yarn workspace apis dev",
+    "dev:app": "yarn workspace app start",
+    "dev": "concurrently \"yarn workspace app start\" \"yarn workspace apis dev\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "uuid": "^9.0.1",
+    "uuidv4": "^6.2.13"
+  }
+}

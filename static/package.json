@@ -1,0 +1,12 @@
+{
+  "name": "@proj/static",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rm -rf ./dist && rm -rf ./tsconfig.buildinfo",
+    "compile": "tsc --build"
+  }
+}
