@@ -13,7 +13,7 @@ import formSaga from './sagas/form.saga';
 const persistConfig = {
     key: 'root',
     storage,
-    blacklist:["isTimedOut","form"]
+    blacklist:["isTimedOut","form","isSubmitted","submissionError","isSubmitting"]
 };
 
 

@@ -78,13 +78,16 @@ export const formSlice = createSlice({
         },
 
         submitSuccess:(state) => {
+            window.localStorage.removeItem("timeout");
+            window.localStorage.removeItem("persist:root");
             return {
                 ...state,
                 isSubmitting:false,
                 isSubmitted:true,
                 form:undefined,
                 fieldValues:undefined,
-                submissionError:null
+                submissionError:null,
+                timeout:undefined
             }
         },
 
