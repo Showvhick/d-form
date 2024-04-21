@@ -52,44 +52,9 @@ const form:types.fieldTypes.IForm = {
                     id:"service_required"
                 }
             ]
-        },
-        {
-            title:"Step 3",
-            fields:[
-                {
-                    label:"Gender",
-                    type: types.fieldTypes.EFieldType.SINGLE_CHOICE,
-                    id:"gender",
-                    options:[
-                        {
-                            label:"Male",
-                            value:"male"
-                        },
-                        {
-                            label:"Female",
-                            value:"female"
-                        }
-                    ]
-                },
-                {
-                    label:"Countries",
-                    type: types.fieldTypes.EFieldType.MULTIPLE_CHOICES,
-                    id:"countries",
-                    options:[
-                        {
-                            label:"Abcd",
-                            value:"abcd"
-                        },
-                        {
-                            label:"Deff",
-                            value:"def"
-                        }
-                    ]
-                }
-            ]
         }
     ],
-    timeout:60
+    timeout:30*60 // in seconds
 }
 
 export default form;
