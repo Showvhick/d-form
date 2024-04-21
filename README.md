@@ -32,6 +32,7 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 yarn install
+yarn build:static // first-time and only if you make any change in types
 yarn dev
 ```
 Front-end is supposed to run on http://localhost:3000
